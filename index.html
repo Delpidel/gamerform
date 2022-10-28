@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta id="letrasaleatorias">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">The Gamer Form</h1>
+            <p id="description" class="description text-center">
+                Let's talk about your gaming preferences.
+            </p>
+            <p id="note" class="note text-center">Note: if you do not play videogames at all, there's no reason to
+                answer this form.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter yout name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for "email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age
+                    <span class="clue">(optional)</span>
+                </label>
+                <input id="number" name="age" type="number" id="number" min="10" max="99" class="form-control"
+                    placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <p>What kind of gamer are you?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select your role</option>
+                    <option value="NotAGamer">Very casual player</option>
+                    <option value="CasualPlayer">Casual player</option>
+                    <option value="HardGamer">Not a professional, but definitely a Gamer</option>
+                    <option value="ProPlayer">Games are my Job (eSports or streamer career) </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How often do you play?</p>
+                <form>
+                    <label for="everyday"><input id="everyday" type="radio" name="everyday-everyweek-notveryoften"
+                            value="everyday">Everyday</label>
+                    <label for="everyweek"><input id="everyweek" type="radio" name="everyday-everyweek-notveryoften"
+                            value="everyweek">Every week</label>
+                    <label for="notveryoften"><input id="notveryoften" type="radio"
+                            name="everyday-everyweek-notveryoften" value="notveryoften">Not very often</label>
+
+            </div>
+            <div class="form-group">
+                <p>Wich devices do you use to play?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="console">Console</option>
+                    <option value="computer">PC</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="all-the-options">All the options</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Tell us about your preference: (Multiple options)
+                </p>
+                <label>
+                    <input name="prefer" value="fps" type="checkbox" class="input-checkbox">First Person Shooter
+                </label>
+                <label>
+                    <input name="prefer" value="third-person" type="checkbox" class="input-checkbox">Third person
+                </label>
+                <label>
+                    <input name="prefer" value="endings" type="checkbox" class="input-checkbox">Your actions determine
+                    what comes next
+                </label>
+                <label>
+                    <input name="prefer" value="riddle" type="checkbox" class="input-checkbox">Riddles and puzzles
+                </label>
+                <label>
+                    <input name="prefer" value="rpg" type="checkbox" class="input-checkbox">RPG
+                </label>
+                <label>
+                    <input name="prefer" value="horror" type="checkbox" class="input-checkbox">Survival horror
+                </label>
+                <label>
+                    <input name="prefer" value="simulation" type="checkbox" class="input-checkbox">Life simulation
+                </label>
+                <label>
+                    <input name="prefer" value="classics" type="checkbox" class="input-checkbox">Something with a more
+                    classic aproach to chill
+                </label>
+                <label>
+                    <input name="prefer" value="challenging" type="checkbox" class="input-checkbox">Something
+                    challenging
+                </label>
+                <label>
+                    <input name="prefer" value="fight" type="checkbox" class="input-checkbox">Fight games
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Anything else you want to tell us about the games you like? Leave a comment!
+                </p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

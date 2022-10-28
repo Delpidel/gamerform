@@ -1,0 +1,1 @@
+Trabalho de cunho acadêmico. Não tenho direitos autorais sobre a imagem.
